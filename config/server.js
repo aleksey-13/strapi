@@ -1,11 +1,3 @@
-// module.exports = ({ env }) => ({
-//   host: env('HOST', '0.0.0.0'),
-//   port: env.int('PORT', 1337),
-//   app: {
-//     keys: env.array('APP_KEYS'),
-//   },
-// });
-
 module.exports = ({ env }) => ({
   host: env.HOST,
   port: env.PORT,
@@ -13,3 +5,11 @@ module.exports = ({ env }) => ({
     keys: env.array("APP_KEYS"),
   },
 });
+
+// module.exports = ({ env }) => ({
+//   host: env('HOST', '0.0.0.0'),
+//   port: env.int('PORT', 1337),
+//   app: {
+//     keys: env.array('APP_KEYS'),
+//   },
+// });
