@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "light_settings",
+  "info": {
+    "singularName": "light-setting",
+    "pluralName": "light-settings",
+    "displayName": "Light settings"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "identifier": {
+      "type": "string"
+    }
+  }
+}

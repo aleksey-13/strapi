@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "grow_areas",
+  "info": {
+    "singularName": "grow-area",
+    "pluralName": "grow-areas",
+    "displayName": "Grow area"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "brand": {
+      "type": "string"
+    }
+  }
+}
