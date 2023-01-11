@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lights",
+  "info": {
+    "singularName": "light",
+    "pluralName": "lights",
+    "displayName": "Light"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "x": {
+      "type": "string"
+    }
+  }
+}
