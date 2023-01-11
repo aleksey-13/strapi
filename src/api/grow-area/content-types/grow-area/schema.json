@@ -4,7 +4,8 @@
   "info": {
     "singularName": "grow-area",
     "pluralName": "grow-areas",
-    "displayName": "Grow area"
+    "displayName": "Grow area",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,6 +14,13 @@
   "attributes": {
     "brand": {
       "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
