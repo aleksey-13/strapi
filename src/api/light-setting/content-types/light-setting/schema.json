@@ -4,15 +4,83 @@
   "info": {
     "singularName": "light-setting",
     "pluralName": "light-settings",
-    "displayName": "Light settings"
+    "displayName": "Light settings",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "identifier": {
+    "lights": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::light.light",
+      "mappedBy": "lightSettings"
+    },
+    "heightSteps": {
       "type": "string"
+    },
+    "cells": {
+      "type": "string"
+    },
+    "resolution": {
+      "type": "decimal"
+    },
+    "eppf": {
+      "type": "decimal"
+    },
+    "eppe": {
+      "type": "decimal"
+    },
+    "ppf": {
+      "type": "integer"
+    },
+    "isPpfVerified": {
+      "type": "boolean",
+      "default": false
+    },
+    "ppe": {
+      "type": "decimal"
+    },
+    "isPpeVerified": {
+      "type": "boolean",
+      "default": false
+    },
+    "power": {
+      "type": "integer"
+    },
+    "cct": {
+      "type": "integer"
+    },
+    "cri": {
+      "type": "integer"
+    },
+    "spectrumImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "spectrumName": {
+      "type": "enumeration",
+      "enum": [
+        "Full",
+        "HPS",
+        "Veg"
+      ],
+      "default": "Full"
+    },
+    "pArData": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "beamAngleName": {
+      "type": "text"
     }
   }
 }

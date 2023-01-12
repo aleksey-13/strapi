@@ -4,15 +4,56 @@
   "info": {
     "singularName": "light",
     "pluralName": "lights",
-    "displayName": "Light"
+    "displayName": "Light",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "x": {
+    "identifier": {
       "type": "string"
+    },
+    "brand": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "link": {
+      "type": "string"
+    },
+    "canopyOffset": {
+      "type": "integer"
+    },
+    "width": {
+      "type": "integer"
+    },
+    "height": {
+      "type": "integer"
+    },
+    "deployHeight": {
+      "type": "integer"
+    },
+    "angle": {
+      "type": "integer"
+    },
+    "lightSettings": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::light-setting.light-setting",
+      "inversedBy": "lights"
     }
   }
 }
