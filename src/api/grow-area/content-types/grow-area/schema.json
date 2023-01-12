@@ -12,6 +12,27 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "x": {
+      "type": "integer"
+    },
+    "y": {
+      "type": "integer"
+    },
+    "z": {
+      "type": "integer"
+    },
+    "identifier": {
+      "type": "string"
+    },
+    "dimensionsMetric": {
+      "type": "string"
+    },
+    "dimensionsImperial": {
+      "type": "string"
+    },
+    "fullName": {
+      "type": "string"
+    },
     "brand": {
       "type": "string"
     },
@@ -21,6 +42,12 @@
       ],
       "type": "media",
       "multiple": false
+    },
+    "link": {
+      "type": "string"
+    },
+    "reflectance": {
+      "type": "decimal"
     }
   }
 }
