@@ -12,15 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "x": {
-      "type": "integer"
-    },
-    "y": {
-      "type": "integer"
-    },
-    "z": {
-      "type": "integer"
-    },
     "identifier": {
       "type": "string"
     },
@@ -37,17 +28,27 @@
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "link": {
       "type": "string"
     },
     "reflectance": {
       "type": "decimal"
+    },
+    "x": {
+      "type": "integer"
+    },
+    "y": {
+      "type": "integer"
+    },
+    "z": {
+      "type": "integer"
     }
   }
 }
