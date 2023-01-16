@@ -64,15 +64,6 @@
         "images"
       ]
     },
-    "spectrumName": {
-      "type": "enumeration",
-      "enum": [
-        "Full",
-        "HPS",
-        "Veg"
-      ],
-      "default": "Full"
-    },
     "pArData": {
       "type": "media",
       "multiple": false,
@@ -82,6 +73,9 @@
       ]
     },
     "beamAngleName": {
+      "type": "string"
+    },
+    "spectrumName": {
       "type": "string"
     }
   }
